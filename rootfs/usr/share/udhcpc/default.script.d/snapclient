@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ "$1" = "bound" -a -n "$opt224" ]; then
+    addr="$((0x${opt224:0:2})).$((0x${opt224:2:2})).$((0x${opt224:4:2})).$((0x${opt224:6:2}))"
+    start-stop-daemon -S -q -b -x snapclient -- -h "$addr"
+fi
