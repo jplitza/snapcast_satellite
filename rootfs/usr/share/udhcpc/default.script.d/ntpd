@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ "$1" = "bound" -a -n "$ntpsrv" ]; then
+    start-stop-daemon -S -q -b -x ntpd -- -p "$ntpsrv"
+fi
