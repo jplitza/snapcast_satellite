@@ -1,1 +1,1 @@
-export BR2_EXTERNAL="$(realpath "$(dirname "$0")/../../snapos/buildroot-external/")"
+export BR2_EXTERNAL="$(realpath "$(dirname "$0")/../snapos/buildroot-external/")"
